@@ -1,0 +1,431 @@
+/* background image is a color gradient */
+body {
+    background-color: #37B2A5;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin-top: 14vh;
+}
+
+/*************************************************
+ ******** MOBILE FIRST: ALL MAIN STYLES **********
+ *************************************************/
+
+ /*----------- login & register styles -----------*/
+
+ .login-text, .register-text {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+ }
+
+ .login-container, .register-container {
+   min-width: 25%;
+   min-height: 35%;
+   border-radius: .5rem;
+   padding-right: 2rem;
+   padding-left: 2rem;
+ }
+
+ .login-text, .register-text, .survey-text {
+   color: #fff;
+   text-align: center;
+ }
+
+ .login-text > h1, .register-text > h1 {
+     font-size: 1.7em;
+ }
+ .login-text > h3, .register-text > h3 {
+     font-size: 1.3em;
+ }
+
+ .login-form input, .register-form input {
+     width: 65%;
+     height: 2rem;
+     border: 1px solid rgb(197,200,204);
+     display: block;
+     margin: 0 auto;
+     border: 1px solid rgb(197,200,204);
+     margin-bottom: .5rem;
+     padding-left: 15px;
+ }
+
+ .login-btn {
+     background-color: #286090;
+     color: #fff;
+     width: 71%;
+     height: 2rem;
+     border: none;
+     display: block;
+     margin: 0 auto;
+ }
+
+ .register-btn {
+   background-color: #286090;
+   color: #fff;
+   width: 35%;
+   height: 2rem;
+   border: none;
+   margin-bottom: 2rem;
+ }
+
+ .login-links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .login-links span {
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+ }
+
+ .password-btn {
+    background-color: #286090;
+    color: #fff;
+    width: 33%;
+    height: 2rem;
+    border: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 2rem;
+}
+
+h4.feedback {
+  padding: 0px;
+  margin: 0px;
+  color: #C84D5A;
+}
+
+h4.feedback.survey {
+    margin-left: 0.2rem;
+    font-size: 1.4rem;
+}
+
+ /*----------- surveypage styles -----------*/
+
+ .survey-text {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+ }
+
+ .survey-container {
+   max-width: 35%;
+   min-height: 35%;
+   background-color: #fff;
+   border-radius: .5rem;
+   padding-right: 2rem;
+   padding-left: 2rem;
+ }
+
+ .survey-container h1 {
+    color: #444;
+}
+
+ /*----------- piechart styles -----------*/
+
+ canvas#surveyChart {
+     min-height: 50vh;
+     min-width: 25%;
+ }
+
+button.return-dash {
+    text-align: -webkit-center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #286090;
+    color: #fff;
+    width: 35%;
+    height: 2rem;
+    border: none;
+}
+.survey-btns {
+    text-align: -webkit-center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.survey-btns button {
+  background-color: #286090;
+  color: #fff;
+  width: 35%;
+  height: 2rem;
+  border: none;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+  /*----------- dashboard styles -----------*/
+ /* Parent selector and styles */
+ .row {
+ 	display: flex;
+ 	flex-direction: row;
+  border-bottom: solid 1px grey;
+ }
+ /* Child to Parent selector and styles */
+ .col {
+ 	flex: 1;
+ 	padding: .6em;
+ }
+ /* column styling */
+ .col {
+ 	background-color: #fff;
+ 	color: #444;
+ 	font-family: helvetica, Sans-Serif;
+ 	text-align: center;
+ }
+
+ .set-btns-vert {
+ 	margin-top: 6%;
+ }
+
+ .set-btns-vert button {
+   background-color: #286090;
+   color: #fff;
+   width: 35%;
+   height: 2rem;
+   border: none;
+ }
+
+ button.view-survey {
+    margin-right: 1rem;
+}
+
+.header {
+    background-color: black;
+    color: #fff;
+    display: flex;
+   	flex-direction: row;
+}
+
+.header-item {
+  flex: 1;
+  padding: .6em;
+  margin-right: 2rem;
+}
+h1.header-item {
+  font-size: 1.3rem !important;
+  margin-left: 2rem;
+}
+
+/*----------- newSurvey styles -----------*/
+
+.new-survey-container {
+  width: 35%;
+  min-height: 35%;
+  background-color: #fff;
+  border-radius: .5rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+.survey-form input {
+    width: 65%;
+    height: 2rem;
+    border: 1px solid rgb(197,200,204);
+    margin: 0 auto;
+    border: 1px solid rgb(197,200,204);
+    margin-bottom: .5rem;
+    padding-left: 15px;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+  color: #444;
+}
+
+.flex-outer {
+  max-width: 800px;
+  /*margin: 0 auto;*/
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  border: 1px solid rgb(197,200,204);
+  padding: 15px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #286090;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.srvyfrm-return-btn {
+    position: absolute;
+    left: 49%;
+}
+
+/* TABET VIEWS */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+        background-color: #37B2A5;
+        font-family: 'Lato', sans-serif;
+        margin-top: 0vh !important;
+    }
+
+    .survey-container {
+      max-width: 50%;
+      min-height: 35%;
+      background-color: #fff;
+      border-radius: .5rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    canvas#surveyChart {
+      min-height: 25vh;
+      min-width: 35%;
+      display: inline-block !important;
+    }
+
+    .set-btns-vert button {
+      background-color: #286090;
+      color: #fff;
+      width: 40%;
+      height: 2rem;
+      border: none;
+    }
+
+    .new-survey-container {
+      width: 35%;
+      min-height: 35%;
+      background-color: #fff;
+      border-radius: .5rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+
+    .flex-outer > li > label, .flex-outer li p {
+      flex: 1 0 120px;
+          text-align: left;
+    }
+
+}
+
+/* MOBILE VIEWS*/
+@media screen and (max-width: 480px) {
+
+  body {
+      background-color: #37B2A5;
+      font-family: 'Lato', sans-serif;
+      margin-top: 0vh !important;
+  }
+
+    .row {
+       display: flex;
+       flex-direction: column;
+       border-bottom: solid 1px grey;
+    }
+
+    .col {
+    	flex: 1;
+    	padding: 0;
+    }
+
+    .set-btns-vert {
+      margin-top: 2%;
+      margin-bottom: 6%;
+    }
+
+    .survey-container {
+        max-width: 100%;
+        min-height: 35%;
+        background-color: #fff;
+        border-radius: .5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    canvas#surveyChart {
+        min-height: 50vh;
+        min-width: 100%;
+    }
+
+    .new-survey-container {
+        width: 100%;
+        min-height: 35%;
+        background-color: #fff;
+        border-radius: .5rem;
+        padding-right: 3rem;
+        padding-left: 1rem;
+    }
+
+    .srvyfrm-return-btn {
+        position: absolute;
+        left: 10%;
+    }
+
+    h1.header-item {
+        font-size: 1.2rem !important;
+        margin-left: 0rem;
+    }
+
+    .header-item {
+        flex: 1;
+        padding: .6em;
+        margin-right: 0.6rem;
+    }
+
+}
